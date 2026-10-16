@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Opsyn Operations",
+    "slug": "opsyn-operations",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/opsyn-logo.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#090D16",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.opsyn.operations",
+      "adaptiveIcon": {
+        "backgroundColor": "#090D16"
+      }
+    },
+    "web": {
+      "favicon": "./assets/opsyn-logo.png"
+    }
+  }
+}

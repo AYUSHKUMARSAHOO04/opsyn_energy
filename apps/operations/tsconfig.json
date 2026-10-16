@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@opsyn/shared": ["../../packages/shared/src/index.ts"],
+      "@opsyn/shared/*": ["../../packages/shared/src/*"]
+    }
+  },
+  "include": ["src/**/*", "App.tsx", "index.js"]
+}
