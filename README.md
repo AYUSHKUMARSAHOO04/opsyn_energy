@@ -333,45 +333,53 @@ npm test
 3. **Resilient API Handling**: Verified offline fallback, request timeout, and mutating idempotency keys.
 
 
-## 60–90 Second Demo Video Flow
 
-For recording a professional demonstration video:
+## Application Demo
 
-```
-┌────────────────────────────────────────────────────────┐
-│ STEP 1: OPSYN CUSTOMER (0:00 - 0:25)                   │
-│ - Show Today's Orders with KPI summary bar             │
-│ - Tap search or filter to show real-time filtering     │
-│ - Tap ORD-8421 (Apollo Steel & Thermal Complex)        │
-│ - Inspect Order Details: Manifest, notes, and timeline │
-└────────────────────────────────────────────────────────┘
-                           │
-                           ▼
-┌────────────────────────────────────────────────────────┐
-│ STEP 2: OPSYN DRIVER (0:25 - 0:45)                     │
-│ - Show Today's Trip: Vehicle TS-08-EN-5092, 4 stops    │
-│ - Open Stop #3 (ORD-8421)                              │
-│ - Tap "Mark In Transit" -> Stepper turns Cyan          │
-│ - Tap "Mark Delivered" -> Stepper turns Green          │
-│ - Notice instant local and server cache sync           │
-└────────────────────────────────────────────────────────┘
-                           │
-                           ▼
-┌────────────────────────────────────────────────────────┐
-│ STEP 3: OPSYN OPERATIONS (0:45 - 1:15)                 │
-│ - Show Command Center: High-Level KPI grid             │
-│ - Filter by "CRITICAL" priority                        │
-│ - Open ACT-901 (Severe ETA Deviation on Cryo Bio-LNG)  │
-│ - Review real-time telemetry sensors (boil-off, bar)   │
-│ - Tap "Generate AI Insight"                            │
-│ - Watch animated scanner "Analyzing operational data..."│
-│ - Reveal OPSYN INTELLIGENCE card:                      │
-│   * HIGH RISK                                          │
-│   * Cause: Boil-off margin reduction                   │
-│   * Recommendation: Protocol dispatch                  │
-│   * 4 Supporting Signals with alert badges             │
-└────────────────────────────────────────────────────────┘
-```
+Explore the three interconnected applications that make up Opsyn. Each demo highlights the app's core workflows, interface, and role within the energy operations platform.
+
+### 1. Opsyn Customer App
+
+**Purpose:** Enables industrial customers to track consignments, review order details, and monitor delivery progress.
+
+**Key features demonstrated:**
+- Today's Orders dashboard and KPI summary
+- Order search and status filters
+- Consignment manifest and delivery details
+- Interactive delivery timeline
+
+**Demo video:** [Watch Opsyn Customer App](https://drive.google.com/file/d/1HPj_PapxADA30cRFNsqki-uST12hPK02/view?usp=drivesdk)
+
+---
+
+### 2. Opsyn Driver App
+
+**Purpose:** Helps drivers manage assigned trips, review delivery stops, and update delivery status.
+
+**Key features demonstrated:**
+- Today's Trip dashboard and route progress
+- Delivery stop list and stop details
+- Delivery lifecycle: Pending → In Transit → Delivered
+- Status updates and progress tracking
+
+**Demo video:** [Watch Opsyn Driver App](https://drive.google.com/file/d/12EdIhwXM8zl1gLXWB6-dJGAhzy9axQFF/view?usp=drivesdk)
+
+---
+
+### 3. Opsyn Operations Command Center
+
+**Purpose:** Provides operations teams with a unified view of deliveries, priority issues, telemetry, and operational insights.
+
+**Key features demonstrated:**
+- Operational KPI dashboard
+- Priority-based issue filtering
+- Telemetry and incident details
+- Opsyn Intelligence Engine and risk recommendations
+
+**Demo video:** [Watch Opsyn Operations App](https://drive.google.com/file/d/1TgODL4SMqoVnOs6qfYJtmjHSMwwaaIIm/view?usp=drivesdk).
+
+---
+
 
 
 ## Engineering Decisions & Trade-offs
