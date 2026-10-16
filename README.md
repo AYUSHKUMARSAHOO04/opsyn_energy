@@ -13,23 +13,11 @@
   <img src="https://img.shields.io/badge/Architecture-Monorepo-10B981" alt="Monorepo" />
 </p>
 
----
 
 > [!IMPORTANT]
 > **Independent Portfolio Implementation Disclosure:**  
 > Opsyn is an independent portfolio implementation inspired by an operational multi-app technical specification. It is not a production system of any external company.
 
----
-
-## Overview
-
----
-
-> [!IMPORTANT]
-> **Independent Portfolio Implementation Disclosure:**  
-> Opsyn is an independent portfolio implementation inspired by an operational multi-app technical specification. It is not a production system of any external company.
-
----
 
 ## Overview
 
@@ -41,7 +29,6 @@ Designed for high-reliability energy logistics—such as cryogenic bio-LNG, pres
 2. **Opsyn Driver** (`apps/driver`): Empowers tanker and transport operators with sequential stop manifests, GPS navigation, and dynamic delivery lifecycle transitions (**Pending → In Transit → Delivered**).
 3. **Opsyn Operations** (`apps/operations`): A high-information-density Command Center for operations controllers featuring real-time radar telemetry, anomaly queues, and the **Opsyn Intelligence Engine** for automated risk synthesis and mitigation planning.
 
----
 
 ## Problem
 
@@ -50,7 +37,6 @@ Industrial energy logistics carries high operational risk:
 - **Fragmented Codebases**: Multi-stakeholder systems frequently suffer from "app drift"—where customer, driver, and internal admin applications duplicate models, drift in design language, and desynchronize API contracts over successive development sprints.
 - **Static Decision Making**: Traditional operations portals provide static alerts without synthesizing telemetry signals (corridor traffic, pressure, transit duration, order priority) into immediate, actionable recommendations.
 
----
 
 ## Solution
 
@@ -59,7 +45,6 @@ Opsyn resolves these challenges by establishing:
 - **Deterministic AI Architecture**: An extensible **Opsyn Intelligence Engine** that processes multi-dimensional telemetry (ETA deviations, boil-off rates, hazard classifications) to output risk scores, potential root causes, and protocol recommendations without hallucination.
 - **Real-Time Cross-App State Synchronization**: Mutual state updates across the fleet powered by TanStack Query and an idempotency-key write protocol.
 
----
 
 ## Key Features
 
@@ -70,7 +55,6 @@ Opsyn resolves these challenges by establishing:
 - **Precision Currency Formatting**: Strict Indian numbering locale conversion (`12345600` paise → `₹1,23,456`).
 - **Dark Industrial Command Center Theme**: High-contrast obsidian, electric cyan (`#00D2FF`), and energy emerald (`#10B981`) palette extracted directly from the Opsyn emblem.
 
----
 
 ## Applications
 
@@ -96,7 +80,6 @@ Opsyn resolves these challenges by establishing:
 - **Detail Screen**: Comprehensive incident view with cryogenic tank pressure sensors, boil-off rate indicators, and traffic congestion indices.
 - **Opsyn Intelligence**: One-click **"Generate AI Insight"** triggers an animated telemetry scanning state (`Analyzing operational data...`), revealing risk level, root cause analysis, and protocol actions.
 
----
 
 ## AI / Intelligence Layer
 
@@ -121,7 +104,6 @@ flowchart TD
   - Cargo physical properties (Cryogenic boil-off margin vs. high-pressure cascade)
 - **Extensibility**: When an external LLM/RAG backend is attached, consumers invoke the exact same contract without code modifications.
 
----
 
 ## Technology Stack
 
@@ -135,7 +117,6 @@ flowchart TD
 - **Icons**: Expo Vector Icons (`Feather`, `MaterialCommunityIcons`, `Ionicons`)
 - **Theme**: Custom Design System (`@opsyn/shared/theme`)
 
----
 
 ## Monorepo Structure
 
@@ -187,7 +168,6 @@ opsyn/
 └── README.md
 ```
 
----
 
 ## API Architecture
 
@@ -206,7 +186,6 @@ Located at `packages/shared/src/api/client.ts`, the shared `ApiClient`:
 - `GET /pending-actions?adminId={id}` — Operations queue items
 - `GET /pending-actions/:id` — Detailed operational anomaly
 
----
 
 ## Shared Component Architecture
 
@@ -256,7 +235,6 @@ Per specification requirement R4, **ONE** polymorphic component serves all three
 />
 ```
 
----
 
 ## Setup
 
@@ -270,7 +248,6 @@ Per specification requirement R4, **ONE** polymorphic component serves all three
 npm run install:all
 ```
 
----
 
 ## Running the Mock API
 
@@ -292,7 +269,6 @@ Output:
 ==================================================
 ```
 
----
 
 ## Running the Applications
 
@@ -313,7 +289,6 @@ npm run driver
 npm run operations
 ```
 
----
 
 ## Running on Android with Expo Go
 
@@ -323,7 +298,6 @@ npm run operations
 4. Open **Expo Go** on your Android phone and tap **"Scan QR code"**.
 5. The JavaScript bundle will compile and launch the application directly on your phone.
 
----
 
 ## LAN Mode vs Tunnel Mode
 
@@ -344,7 +318,6 @@ npm run operations:tunnel
 ```
 Expo will generate a global secure cloud proxy tunnel URL bypassing local subnet restrictions.
 
----
 
 ## Testing
 
@@ -359,7 +332,6 @@ npm test
 2. **Operational Risk Engine**: Verified risk calculation (`LOW` for <=10m delay, `MEDIUM` for moderate delay, `HIGH` for >30m delay with `CRITICAL` priority, and `CRITICAL` for >60m delay).
 3. **Resilient API Handling**: Verified offline fallback, request timeout, and mutating idempotency keys.
 
----
 
 ## 60–90 Second Demo Video Flow
 
@@ -401,7 +373,6 @@ For recording a professional demonstration video:
 └────────────────────────────────────────────────────────┘
 ```
 
----
 
 ## Engineering Decisions & Trade-offs
 
@@ -412,7 +383,6 @@ For recording a professional demonstration video:
 | **Deterministic Intelligence Engine** | Guarantees reliable, un-hallucinated responses during live interviews and demos. | Does not generate free-form conversational text; designed with a swappable interface for future LLM integration. |
 | **Resilient API Client Fallback** | Ensures the demo app never shows an unhandled white-screen crash if the mock server is offline. | Must keep in-memory mock data synchronized with the root `mock-api.json`. |
 
----
 
 ## Future Improvements
 
@@ -421,7 +391,6 @@ For recording a professional demonstration video:
 - **RAG LLM Connection**: Connect the `generateOperationalInsight` interface to a vector database indexing facility SOPs and hazardous materials compliance guidelines.
 - **Offline SQLite Cache**: Implement local SQLite storage for drivers traveling through zero-connectivity rural transit zones.
 
----
 
 ## AI Usage Disclosure
 
@@ -431,4 +400,4 @@ For recording a professional demonstration video:
 
 ---
 
-*Opsyn — AI-Powered Energy Operations Platform · 2026*
+*Opsyn: AI-Powered Energy Operations Platform · 2026*
