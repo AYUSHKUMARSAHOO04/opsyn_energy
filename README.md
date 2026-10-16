@@ -348,7 +348,7 @@ Explore the three interconnected applications that make up Opsyn. Each demo high
 - Consignment manifest and delivery details
 - Interactive delivery timeline
 
-**Demo video:** [Watch Opsyn Customer App](https://drive.google.com/file/d/1HPj_PapxADA30cRFNsqki-uST12hPK02/view?usp=drivesdk)
+**Demo video:** [Watch Opsyn Customer App](https://youtube.com/shorts/A3FapmrQeQg?si=YVJOU4TiMy9uDQgd)
 
 ---
 
@@ -362,7 +362,7 @@ Explore the three interconnected applications that make up Opsyn. Each demo high
 - Delivery lifecycle: Pending → In Transit → Delivered
 - Status updates and progress tracking
 
-**Demo video:** [Watch Opsyn Driver App](https://drive.google.com/file/d/12EdIhwXM8zl1gLXWB6-dJGAhzy9axQFF/view?usp=drivesdk)
+**Demo video:** [Watch Opsyn Driver App](https://youtube.com/shorts/rgoS6prJzzU?si=ni0IICsGis_etCTQ)
 
 ---
 
@@ -376,7 +376,7 @@ Explore the three interconnected applications that make up Opsyn. Each demo high
 - Telemetry and incident details
 - Opsyn Intelligence Engine and risk recommendations
 
-**Demo video:** [Watch Opsyn Operations App](https://drive.google.com/file/d/1TgODL4SMqoVnOs6qfYJtmjHSMwwaaIIm/view?usp=drivesdk).
+**Demo video:** [Watch Opsyn Operations App](https://youtu.be/ncmyxyl1s_Q?si=s07JQby4UImRtP5W).
 
 ---
 
