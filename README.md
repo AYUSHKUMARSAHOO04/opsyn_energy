@@ -23,7 +23,7 @@
 
 **Opsyn** is a modern, unified multi-application energy operations platform built with **React Native**, **Expo**, **TypeScript**, and **TanStack Query** within a clean **npm-workspaces monorepo**.
 
-Designed for high-reliability energy logistics—such as cryogenic bio-LNG, pressurized biomethane, industrial steam manifold valves, and high-purity hydrogen cascades—Opsyn unifies three interconnected operational viewpoints into a single, cohesive codebase:
+Designed for high-reliability energy logistics such as cryogenic bio-LNG, pressurized biomethane, industrial steam manifold valves, and high-purity hydrogen cascades Opsyn unifies three interconnected operational viewpoints into a single, cohesive codebase:
 
 1. **Opsyn Customer** (`apps/customer`): Enables industrial facility managers to track active consignments, inspect cryogenic telemetry notes, view interactive delivery timelines, and verify digital manifests.
 2. **Opsyn Driver** (`apps/driver`): Empowers tanker and transport operators with sequential stop manifests, GPS navigation, and dynamic delivery lifecycle transitions (**Pending → In Transit → Delivered**).
@@ -34,7 +34,7 @@ Designed for high-reliability energy logistics—such as cryogenic bio-LNG, pres
 
 Industrial energy logistics carries high operational risk:
 - **Time & Pressure Sensitivity**: Cryogenic gases (such as Bio-LNG at -162°C) experience boil-off pressure buildup during unexpected transit delays.
-- **Fragmented Codebases**: Multi-stakeholder systems frequently suffer from "app drift"—where customer, driver, and internal admin applications duplicate models, drift in design language, and desynchronize API contracts over successive development sprints.
+- **Fragmented Codebases**: Multi-stakeholder systems frequently suffer from "app drift" where customer, driver, and internal admin applications duplicate models, drift in design language, and desynchronize API contracts over successive development sprints.
 - **Static Decision Making**: Traditional operations portals provide static alerts without synthesizing telemetry signals (corridor traffic, pressure, transit duration, order priority) into immediate, actionable recommendations.
 
 
@@ -179,12 +179,12 @@ Located at `packages/shared/src/api/client.ts`, the shared `ApiClient`:
 - **Resilient Field Fallback**: If running in an offline environment or if the mock server hasn't been booted, the client transparently serves local demo data so live presentations never crash.
 
 ### Endpoints
-- `GET /orders?customerId={id}` — Customer consignments
-- `GET /orders/:id` — Single order manifest
-- `GET /trips?driverId={id}` — Driver trip with stops
-- `PATCH /trips/:tripId/stops/:stopId` — Live stop lifecycle transition
-- `GET /pending-actions?adminId={id}` — Operations queue items
-- `GET /pending-actions/:id` — Detailed operational anomaly
+- `GET /orders?customerId={id}` - Customer consignments
+- `GET /orders/:id` - Single order manifest
+- `GET /trips?driverId={id}` - Driver trip with stops
+- `PATCH /trips/:tripId/stops/:stopId` - Live stop lifecycle transition
+- `GET /pending-actions?adminId={id}` - Operations queue items
+- `GET /pending-actions/:id` - Detailed operational anomaly
 
 
 ## Shared Component Architecture
