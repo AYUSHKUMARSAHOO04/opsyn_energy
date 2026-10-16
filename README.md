@@ -1,7 +1,27 @@
-# Opsyn
+<p align="center">
+  <img src="apps/customer/assets/opsyn-logo.png" alt="Opsyn — AI-Powered Energy Operations" width="750" />
+</p>
 
-> **AI-Powered Energy Operations Platform**  
-> *An independent multi-application energy logistics and command system engineered for high-criticality industrial operations.*
+<p align="center">
+  An independent multi-application energy logistics and command system engineered for high-criticality industrial operations.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React_Native-0.74.5-61DAFB?logo=react&logoColor=white" alt="React Native" />
+  <img src="https://img.shields.io/badge/Expo-SDK_51-000020?logo=expo&logoColor=white" alt="Expo" />
+  <img src="https://img.shields.io/badge/TypeScript-5.3+-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Architecture-Monorepo-10B981" alt="Monorepo" />
+</p>
+
+---
+
+> [!IMPORTANT]
+> **Independent Portfolio Implementation Disclosure:**  
+> Opsyn is an independent portfolio implementation inspired by an operational multi-app technical specification. It is not a production system of any external company.
+
+---
+
+## Overview
 
 ---
 
